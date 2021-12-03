@@ -1,8 +1,8 @@
 declare module 'react-native-switch' {
   import { Component, ReactNode } from 'react';
-  import { StyleProp, TextStyle, ViewStyle } from 'react-native';
+  import { StyleProp, TextStyle, TouchableWithoutFeedbackProps, ViewStyle } from 'react-native';
 
-  export interface SwitchProps {
+  export interface SwitchProps extends TouchableWithoutFeedbackProps {
     onValueChange?: (value: boolean) => void;
     disabled?: boolean;
     activeText?: string;
